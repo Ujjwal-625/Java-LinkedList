@@ -1,3 +1,4 @@
+package SingleLinkedList;
 
 class Student{
     int rollNumber,age;
@@ -108,7 +109,7 @@ class SingleLinkedList{
             temp=temp.next;
         }
         if(temp==null || temp.next==null){
-            System.out.println("No Student with given roll number exist");
+            System.out.println("No SingleLinkedList.Student with given roll number exist");
         }
         if(temp.next!=null) {
             temp.next = temp.next.next;//deleting the node
@@ -120,12 +121,12 @@ class SingleLinkedList{
         Node temp=head;
         while(temp!=null){
             if(temp.data.rollNumber==rollNumber){
-                System.out.println("Student found ");
+                System.out.println("SingleLinkedList.Student found ");
                 return ;
             }
             temp=temp.next;
         }
-        System.out.println("Student not found");
+        System.out.println("SingleLinkedList.Student not found");
     }
 
     void updateStudentGrades(char grade,int rollNumber){
@@ -138,7 +139,7 @@ class SingleLinkedList{
             }
             temp=temp.next;
         }
-        System.out.println("Student not found");
+        System.out.println("SingleLinkedList.Student not found");
     }
 }
 

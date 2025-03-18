@@ -1,4 +1,4 @@
-import java.lang.management.MonitorInfo;
+package DoubleLinkedList;
 
 class Movie{
     String title,director;
@@ -116,7 +116,7 @@ class DoubleLinkedList{
             if(temp.next!=null){
                 temp.next.prev=temp.prev;
             }
-            System.out.println("Movie Deleted ");
+            System.out.println("DoubleLinkedList.Movie Deleted ");
         }
     }
 
@@ -124,15 +124,15 @@ class DoubleLinkedList{
         Node temp=head;
         while(temp!=null){
             if(temp.data.director.equals(director)){
-                System.out.println("Movie found ");
-                System.out.println("Movie title is : "+temp.data.title);
+                System.out.println("DoubleLinkedList.Movie found ");
+                System.out.println("DoubleLinkedList.Movie title is : "+temp.data.title);
                 break;
             }
             temp=temp.next;
         }
 
         if(temp==null){
-            System.out.println("Movie Not Found ");
+            System.out.println("DoubleLinkedList.Movie Not Found ");
         }
 
 
