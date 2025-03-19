@@ -160,7 +160,6 @@ class InventoryList {
     }
 
 
-
     // Print inventory
     void printInventory() {
         Node temp = head;
